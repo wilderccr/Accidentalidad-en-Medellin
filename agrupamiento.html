@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Agrupamiento de accidentes</title>
+  </head>
+  <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+  <body>
+  
+   <div class="externo cabecera-menu">
+    <div class="interno interno-cabecera-menu">
+      <nav id="caja-nav">
+        <ul class="menu">
+          <li class="active"><a href="index.html" title="Home"><span class="title">Inicio</span><span class="after"></span></a></li>
+          <li><a href="ofertas.html" title="Ofertas"><span class="title">Datos de accidentalidad historicos</span><span class="after"></span></a></li>
+          <li><a href="fonendos.html" title="Fonendos"><span class="title">Predicción de accidentalidad</span><span class="after"></span></a></li>
+          <li><a href="agrupamiento.html" title="Agrupamiento"><span class="title">Agrupamiento de accidentes</span><span class="after"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+<h1>Agrupamiento de accidentes</h1>
+
+<h3>A continuación se presentan los datos en un mapa interactivo donde a cada barrio de la ciudad de Medellin se le ha asignado un grupo, siguiendo los <br>
+siguientes parámetros: <br><br>
+</h3>
+
+<div>
+<h2>Grado de accidentalidad:</h2>
+<h3><img src="alta.PNG"     alt="alta accidentalidad"     width="30"     height="30"> <b>Alta accidentalidad: </b> Se consideraran barrios de alta
+accidentalidad aquellos que presenten un número de incidentes diarios mayor a 1.<br><br></h3>
+<h3><img src="media.PNG"     alt="media accidentalidad"     width="30"     height="30"> <b>Media accidentalidad: </b> Se consideraran barrios de media
+accidentalidad aquellos que presenten un número de incidentes mayor a 2 eventos por semana <br>y menor o igual a 1 evento por dia.<br><br></h3>
+<h3><img src="baja.PNG"     alt="baja accidentalidad"     width="30"     height="30"> <b>Baja accidentalidad: </b> Se consideraran barrios de baja
+accidentalidad aquellos que presenten un número de incidentes menor a 2 eventos por semana.<br><br><br></h3>
+</div>
+
+<div>
+<h2>Incidencia de heridos:</h2>
+<h3>
+<ul>
+<li type="square">Alta incidencia de heridos: Se considerará un barrio con alta incidencia de heridos aquel que presente un porcentaje de heridos mayor al 75%<br> sobre el número de incidentes totales.</li><br><br>
+<li type="square">Media incidencia de heridos: Se considerará un barrio con media incidencia de heridos aquel que presente un porcentaje de heridos mayor a 50%<br> y menor o igual a 75% sobre el número de incidentes totales.</li><br><br>
+<li type="square">Baja incidencia de heridos: Se considerará un barrio con media incidencia de heridos aquel que presente un porcentaje de heridos menor o igual<br> al 50% sobre el número de incidentes totales.</li><br><br>
+</ul>
+</h3>
+</div>
+
+<div>
+<h2>Incidencia de muertes:</h2>
+<h3>
+<ul>
+<li type="square">Alta incidencia de muertes: Se considerará un barrio con alta incidencia de muertes aquel que presente un porcentaje de muertes mayor al 5%<br> sobre el número de incidentes totales.</li><br><br>
+<li type="square">Media incidencia de muertes: Se considerará un barrio con media incidencia de muertes aquel que presente un porcentaje de muertes mayor a 2%<br> y menor o igual a 5% sobre el número de incidentes totales.</li><br><br>
+<li type="square">Baja incidencia de muertes: Se considerará un barrio con baja incidencia de muertes aquel que presente un porcentaje de heridos menor o igual<br> al 2% sobre el número de incidentes totales.</li><br><br>
+</ul>
+</h3>
+</div>
+
+<h2>Ejemplo de agrupamiento:</h2>
+<h3>A cada barrio se le asignó una cateogoria dependiendo de los parámetros anteriormenre mencionados, es decir, para un barrio cuya categoria es<br>
+	MEDIO-ALTO-BAJO indica el grado de accidentalidad, la incidencia de heridos y la incidencia de muertes respectivamente, igualmente, el degradado<br>
+	de color para cada categoria, depende de que tan alto o bajo este cada parámetro, como se muestra en la siguiente imágen:</h3>
+
+<div align="center">
+<figure>
+  <img src="categorias.PNG"
+       alt="Ejemplo de agrupamiento" width="400"
+       height="341">
+  <figcaption>Ejemplo categoria de agrupamiento de media accidentalidad.<br><br></figcaption>
+</figure>
+</div>
+
+<h2>Información del barrio:</h2>
+<h3>Al hacer clic en cada unos de los barrios se podra apreciar la siguiente información:</h3>
+
+<div align="center">
+<figure>
+  <img src="barrio.PNG"
+       alt="Ejemplo de agrupamiento" width="400"
+       height="341">
+  <figcaption>Información que trae cada barrio.<br><br></figcaption>
+</figure>
+</div>
+
+<h1>Mapa de accidentalidad por barrios</h1>
+
+<div id="pagina">
+  <header class="header">
+    <div class="header-area">
+      <section>
+        <!--  <h2>Titilo de contenido</h2>
+					   <p class="sub-header"> Contenido </p> -->
+      </section>
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <div class="contenido-ancho externo">
+      <div class="contenido-ancho-interno interno">
+
+		<iframe src="https://www.google.com/maps/d/embed?mid=1LjihfJ47KjK6fsbpWS8gU0haYGx9TyT7" width="1200" height="650"></iframe>
+
+      </div>
+    </div>
+  </div>
+  <!--		<section>
+			<article>
+			<br>
+				<h2>Titulo del articulo</h2>
+				<p>Aqui va el artículo</p>
+				<img src="images/logo.png">				
+			</article>
+		</section>
+		<aside>
+			<h2>ASIDE</h2>
+			<p>Puede haber mas de uno y se les da formato diferente asignándoles ID o CLASS con CSS</p>
+		</aside>-->
+</div>
+<footer class="footer">
+  <div class="post-footer">
+
+    Elaborado por: <br>
+	Wilder Camilo Castro Ramos<br>
+	Facultad de Minas<br>
+	Universidad Nacional de Colombia<br>
+	Sede Medellín<br>
+	Todos los derechos reservados<br>
+	2020
+
+  </div>
+</footer>
+
+</body>
+</html>

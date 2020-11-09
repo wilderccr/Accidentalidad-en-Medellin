@@ -2,30 +2,79 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Assignment Solution for Module 2</title>
+    <title>Accidentalidad en Medellin</title>
   </head>
   <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
   <body>
+  
+  <div class="externo cabecera-menu">
+    <div class="interno interno-cabecera-menu">
+      <nav id="caja-nav">
+        <ul class="menu">
+          <li class="active"><a href="index.html" title="Home"><span class="title">Inicio</span><span class="after"></span></a></li>
+          <li><a href="ofertas.html" title="Ofertas"><span class="title">Datos de accidentalidad historicos</span><span class="after"></span></a></li>
+          <li><a href="fonendos.html" title="Fonendos"><span class="title">Predicción de accidentalidad</span><span class="after"></span></a></li>
+          <li><a href="agrupamiento.html" title="Agrupamiento"><span class="title">Agrupamiento de accidentes</span><span class="after"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-<h1>Our Menu</h1>
+<h1>Accidentalidad en Medellín</h1>
 
-<div id="box1">
-  <div id="content">Chicken
-  </div>
-  <div id="content1"><br>pollo frito al plato compuesto por trozos de carne de pollo tierno, a veces enharinados o rebozados, y luego fritos. El empanado añade una corteza exterior crujiente que evita la pérdida de los jugos pero también absorbe la grasa usada al freír.
-  </div>
+<h3>Esta aplicación web tiene como finalidad poder visualizar y analizar con mas facilidad los datos de accidentalidad de la ciudad de <br>
+Medellin ocurridos entre el 2014 y 2018, para lo cual se utilizó la información de <a href="https://geomedellin-m-medellin.opendata.arcgis.com/search?tags=movilidad">datos abiertos de movilidad</a> que pública la alcaldía <br>
+de Medellín.<br><br>
+En esta aplicación usted encontrará tres modulos funcionales donde podrá:</h3>
+
+
+<h3>
+<ul>
+<li type="square">Visualizar una gráfica con los datos historicos de accidentalidad en la ciudad de Medellín entre los años 2014 a 2018 por tipo <br>
+de accidente (atropello, caida de ocupante, choque, incendio, volcamiento, otro), donde usted podrá elegir el periodo de tiempo <br> de su interes.</li><br><br>
+<li type="square">Visualizar una gráfica de predicción por tipo de accidente (atropello, caida de ocupante, choque, incendio, volcamiento, otro),<br>
+donde usted podrá definir una ventana temporal y visualizar los datos predichos para dicho periodo.</li><br><br>
+<li type="square">Usted podra visualizar un mapa de la ciudad de Medellin, con los accidentes presentados por cada barrio, los datos aqui presentados <br>
+se encuentran agrupados segun los criterios definidos en dicho modulo.</li><br><br>
+</ul>
+</h3>
+
+<div id="pagina">
+  <header class="header">
+    <div class="header-area">
+      <section>
+        <!--  <h2>Titilo de contenido</h2>
+					   <p class="sub-header"> Contenido </p> -->
+      </section>
+    </div>
+  </header>
+
+  <!--		<section>
+			<article>
+			<br>
+				<h2>Titulo del articulo</h2>
+				<p>Aqui va el artículo</p>
+				<img src="images/logo.png">				
+			</article>
+		</section>
+		<aside>
+			<h2>ASIDE</h2>
+			<p>Puede haber mas de uno y se les da formato diferente asignándoles ID o CLASS con CSS</p>
+		</aside>-->
 </div>
-<div id="box2">
-  <div id="content2">Beef
+<footer class="footer">
+  <div class="post-footer">
+
+    Elaborado por: <br>
+	Wilder Camilo Castro Ramos<br>
+	Facultad de Minas<br>
+	Universidad Nacional de Colombia<br>
+	Sede Medellín<br>
+	Todos los derechos reservados<br>
+	2020
+
   </div>
-  <div id="content3"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
-  </div>
-</div>
-<div id="box3">
-  <div id="content4">Sushi 
-  </div>
-  <div id="content5"><br>plato típico de origen japonés basado en arroz aderezado con vinagre de arroz, azúcar y sal y combinado con otros ingredientes como pescados, mariscos y verduras. Este plato es uno de los más reconocidos de la gastronomía japonesa y uno de los más populares internacionalmente.
-  </div>
-</div>
+</footer>
+
 </body>
 </html>
