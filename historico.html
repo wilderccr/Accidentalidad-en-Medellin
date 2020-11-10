@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Accidentalidad en Medellín</title>
+    <title>Datos historicos de accidentalidad en Medellín</title>
   </head>
   <link rel="stylesheet" href="style.css" />
   <body>
@@ -20,24 +20,35 @@
     </div>
   </div>
 
-<h1>Accidentalidad en Medellín</h1>
+<h1>Datos historicos de accidentalidad en Medellín</h1>
 
-<h3>Esta aplicación web tiene como finalidad poder visualizar y analizar con mas facilidad los datos de accidentalidad de la ciudad de <br>
-Medellin ocurridos entre el 2014 y 2018, para lo cual se utilizó la información de <a href="https://geomedellin-m-medellin.opendata.arcgis.com/search?tags=movilidad">datos abiertos de movilidad</a> que pública la alcaldía <br>
-de Medellín.<br><br>
-En esta aplicación usted encontrará tres modulos funcionales donde podrá:</h3>
-
+<h3>A continuación, usted podrá elegir una ventana temporal donde se visualizaran los datos de accidentalidad por tipo de accidente.<br> El periodo elegido
+debes estar comprendido entre el 01/01/2014 al 31/12/2018.<br><br>Los tipos de accidentes que se pueden contabilizar son:</h3>
 
 <h3>
 <ul>
-<li type="square">Visualizar una gráfica con los datos historicos de accidentalidad en la ciudad de Medellín entre los años 2014 a 2018 por tipo <br>
-de accidente (atropello, caida de ocupante, choque, incendio, volcamiento, otro), donde usted podrá elegir el periodo de tiempo <br> de su interes.</li><br><br>
-<li type="square">Visualizar una gráfica de predicción por tipo de accidente (atropello, caida de ocupante, choque, incendio, volcamiento, otro),<br>
-donde usted podrá definir una ventana temporal y visualizar los datos predichos para dicho periodo.</li><br><br>
-<li type="square">Usted podra visualizar un mapa de la ciudad de Medellin, con los accidentes presentados por cada barrio, los datos aqui presentados <br>
-se encuentran agrupados segun los criterios definidos en dicho modulo.</li><br><br>
+<li type="square">Atropello</li><br>
+<li type="square">Caida de ocupante</li><br>
+<li type="square">Choque</li><br>
+<li type="square">Incendio</li><br>
+<li type="square">Volcamiento</li><br>
+<li type="square">Otro</li><br><br>
 </ul>
 </h3>
+
+<form method="POST" action="datos.php">
+<div class="contiene">
+  <label class="input-group-addon" id="basic-addon1">Fecha inicial:</label>
+  <input type="date" id="start" name="inicio" value="2014-01-01" min="2014-01-01" max="2018-12-31">
+  <label class="input-group-addon" id="basic-addon1">Fecha final:</label>
+  <input type="date" id="end" name="fin" value="2018-12-31" min="2014-01-01" max="2018-12-31">
+  <br><br>
+  <div class="boton">
+  <input type="submit" value="Consultar">
+  </div>
+</div>
+</form>
+  <br><br>
 
 <div id="pagina">
   <header class="header">

@@ -261,3 +261,20 @@ footer {
   text-align: center;
   margin-top: 10px;
 }
+
+.contiene input {
+  width: 20%;
+  clear: both;
+  font: 100% sans-serif;
+}
+
+.contiene {
+	margin-left: 20em;
+	width: 60%;
+	font: 140% sans-serif;
+}
+
+.boton  {
+	margin-left: 13em;
+}
+
