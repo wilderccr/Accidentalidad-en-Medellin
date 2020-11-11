@@ -10,6 +10,7 @@ h1 {
 h2 {
   text-align: justify;
   margin-left: 7em;
+  color: #000000;
 }
 
 h3 {
@@ -275,6 +276,12 @@ footer {
 }
 
 .boton  {
-	margin-left: 13em;
+	margin-left: 15em;
 }
 
+.head td{
+	height: 500px;
+}
+.center{
+	text-align: center;
+}
